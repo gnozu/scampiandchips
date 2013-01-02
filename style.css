@@ -243,10 +243,6 @@ video {
 	padding: 1em;
 }
 
-.hero-unit h1 {
-	font-size: 3em;
-}
-
 /* comments */
 
 
@@ -512,7 +508,7 @@ blockquote.pull-left{
 
 @media only screen and (min-width: 980px) {
 	body{
-		padding-top: 60px;
+		padding-top: 0px;
 	}
 	
 	.container-fluid{
@@ -525,7 +521,7 @@ blockquote.pull-left{
 	#inner-footer{
 		padding: 0;
 	}
-	
+
 	#content{
 		padding-left: 0;
 		padding-right: 0;
@@ -556,17 +552,9 @@ blockquote.pull-left{
 		width: 230px;
 	}
 	
-	.blog .hero-unit{
-		margin-top: 10px;
-	}
-	
 	.page-template-page-homepage-php .hero-unit,
 	.blog .hero-unit{
-		padding: 60px;
-	}
-	
-	.hero-unit h1 {
-		font-size: 60px;
+		padding: 0px;
 	}
 	
 	/* hide edit comment button and show on hover on desktop version */
@@ -592,3 +580,296 @@ blockquote.pull-left{
 		padding-right: 0;
 	}
 }
+
+
+
+
+
+
+
+/***********************************************************/
+
+
+
+
+
+/*!
+* Custom CSS for matthewbullphoto.com
+* Copyright 2012 Matthew Bull
+*
+* Designed and built by @gnozu
+*/
+
+/******** Custom Styles ********/
+
+
+p {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size:14px;
+    line-height:21px;
+    margin-bottom: 1.625em;
+/*     text-shadow:1px 1px 1px rgba(101,101,101,1); */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:normal;
+}
+
+body {
+     /* background:url(images/bg_beigex2.png) repeat top left; */
+     -webkit-font-smoothing: antialiased;
+     background-color: #443731;
+     color: #b6aa95;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h1, h2 {
+    margin-bottom:10px;
+    text-shadow:0px 2px 1px rgba(128,0,56,1);
+    color: #b8283d;
+}
+
+hr {
+     border-bottom: 1px solid rgba(0, 0, 0, .2);
+     -moz-box-shadow: 0 1px 0 rgba(255,255,255,.5);
+     -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.5);
+     -ms-box-shadow: 0 1px 0 rgba(255,255,255,.5);
+     -o-box-shadow: 0 1px 0 rgba(255,255,255,.5);
+     box-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+header {
+        margin: 0px 0px 30px 0px;
+    text-align:center;
+
+}
+
+footer {
+    margin: 50px 0px 0px 0px;
+    text-align:center;
+}
+
+.row, .row-fluid {
+    margin: 30px 0px 0px 0px;
+}
+
+a:link {color:#b8283d;}      /* unvisited link */
+a:visited {color:#b8283d;}  /* visited link */
+a:hover {color:#b6aa95;}  /* mouse over link */
+a:active {color:#b8283d;}  /* selected link */
+
+.attribution {
+  font-size: 0.9em;
+}
+
+/*
+cayenne #DA4A52
+jade cream #61BD93
+tender shoots #B9D146
+light gray #DBD9CE
+
+19-0509 - 363C31
+15-1306 - B6AA95
+19-1015 - 4E423D
+17-6009 - 5C6D61
+
+16-4411 - 88A5AF
+11-4201 - F0F1F0
+14-4103 - C0C4C3
+15-4702 - A4B0AC
+
+
+457 - #B59B0C
+461 - #EDE5AD
+5615 - #546856
+7617 - 
+
+11-4202 - #EDEFEC
+12-0105 - #D8D4C2
+14-4103 - #C0C4C3
+19-4203 - #2E3235
+
+15-1306 - #B6AA95
+19-0512 - #585748
+19-0912 - #443731
+19-1663 - #B8283D
+
+
+16-4411 - #88A5AF
+11-4201 - #F0F1F0
+14-4103 - #C0C4C3
+15-4702 - #A4B0AC
+
+*/
+.color1 {
+    background-color: #363C31;
+}
+.color2 {
+    background-color: #B6AA95;
+}
+.color3 {
+    background-color: #4E423D;
+}
+.color4 {
+    background-color: #5C6D61;
+}
+
+.color5 {
+    background-color: #88A5AF;
+}
+.color6 {
+    background-color: #F0F1F0;
+}
+.color7 {
+    background-color: #C0C4C3;
+}
+.color8 {
+    background-color: #A4B0AC;
+}
+
+
+.color9 {
+    background-color: #EDEFEC;
+}
+.color10 {
+    background-color: #D8D4C2;
+}
+.color11 {
+    background-color: #C0C4C3;
+}
+.color12 {
+    background-color: #2E3235;
+}
+
+.color13 {
+    background-color: #B6AA95;
+}
+.color14 {
+    background-color: #585748;
+}
+.color15 {
+    background-color: #443731;
+}
+.color16 {
+    background-color: #B8283D;
+}
+
+
+.color17 {
+    background-color: #65b0c9;
+}
+.color18 {
+    background-color: #F0F1F0;
+}
+.color19 {
+    background-color: #C0C4C3;
+}
+.color20 {
+    background-color: #A4B0AC;
+}
+
+.photo-box {
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: 1px 1px 10px rgba(31,31,31,0.7);
+    -moz-box-shadow: 1px 1px 10px rgba(31,31,31,0.7);
+    box-shadow: 1px 1px 10px rgba(31,31,31,0.7);
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+
+.photo-box:hover {
+    opacity: 0.5;
+    -webkit-transform:scale(1.01);
+    -moz-transform:scale(1.01);
+    -o-transform:scale(1.01);
+    -ms-transform:scale(1.01);
+    transform:scale(1.01);
+}
+
+.social-box img {
+    opacity: 0.3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    margin: 0;
+    padding:0;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+
+.social-box:hover img {
+    opacity: 1.0;    
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.01);
+    -o-transform:scale(1.01);
+    -ms-transform:scale(1.01);
+    transform:scale(2.01);
+}
+
+/******** Responsive Styles ********/
+
+
+/**** Landscape phones and down ****/
+@media (max-width: 480px) {
+    .photo-box {
+      margin: 30px auto 30px auto !important;
+      text-align:center;
+      width: 80%;
+    }
+    .social-box {
+      margin: 30px auto 30px auto !important;
+      text-align:center;
+      width: 50%;
+    }
+}
+
+/**** Landscape phone to portrait tablet ****/
+@media (max-width: 767px) {
+    .photo-box {
+      margin: 30px auto 30px auto !important;
+      text-align:center;
+      width: 80%;
+    }
+    .social-box {
+      margin: 30px auto 30px auto !important;
+      text-align:center;
+      width: 50%;
+    }
+}
+
+/**** Portrait tablet to landscape and desktop ****/
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/**** Desktop to large desktop ****/
+@media (min-width: 979px) and (max-width: 1200px) {
+
+}
+
+/**** Large desktop ****/
+@media (min-width: 1200px) {
+
+}
+
