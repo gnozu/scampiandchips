@@ -1,17 +1,32 @@
 <?php get_header(); ?>
       
 
-    <div class="clearfix row-fluid">
+    <div class="clearfix row-fluid title-block">
       <h1><?php bloginfo('title'); ?></h1>
       <h2><?php bloginfo('description'); ?></h2>
     </div>
     
+<!--
     <div class="row-fluid">
+        <div class="color17">sadfsa</div>
+        <div class="color13">asdAd</div>
+        <div class="color14">saddfdfdf</div>
+        <div class="color15">SadasDas</div>
+    </div>
+-->
+    
+    
+    <div class="row-fluid image-block">
         <div class="span2 offset2">
-            <div class="photo-box">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img.jpg">
-            </div><!--/photo-box-->
-        </div>
+		    <div class="main2">
+	            <div class="view view-first">
+	            	<a href='#'>
+		                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/hand.jpg" />
+		                <div class="mask"></div>
+	            	</a>
+	            </div>
+		    </div>
+	    </div>
         <div class="span2">
             <div class="photo-box">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img.jpg">
