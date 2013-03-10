@@ -23,5 +23,7 @@
                     </div><!--/row-fluid-->
                     <?php endforeach; ?>
                 </div><!--/span6-->
-
+                
+            </div><!--/main-block-->
+            
 <?php get_footer(); ?>
