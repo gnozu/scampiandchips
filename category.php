@@ -1,59 +1,27 @@
 <?php get_header(); ?>
-      
 
-    <div class="clearfix row-fluid title-block">
-      <h1><a href="/"><?php bloginfo('title'); ?></a></h1>
-      <h2><?php bloginfo('description'); ?></h2>
-    </div>
-    
-    <div class="row-fluid image-block">
-        <div class="span1 offset5">
-		    <div class="main2">
-	            <div class="view view-category">
-	                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/category4.png" />
-	            </div>
-		    </div>
-	    </div>
-	    <div class="span1">
-		    <div class="main2">
-	            <div class="view view-category">
-	                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/category4.png" />
-	            </div>
-		    </div>
-	    </div>
-    </div><!--/row-fluid-->
-    
-    <?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h3 class="archive-title"><?php printf( __( '%s', 'scampiandchips' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h3>
+                <div class="span6 offset1">
+                    <div class="row-fluid category-block">
+                        <div class="span10">
+                        <?php $cat_id = get_query_var('cat'); ?>
+                            <h3><a href='<?php echo get_category_link($cat_id); ?>'><?php single_cat_title(); ?></a></h3>
+                            <?php echo category_description(); ?>
+                        </div>
+                    </div>
+                    
+                    <?php foreach ( get_posts( array( 'category' => 'black-and-white' ) ) as $post ): ?>        
+                    <div class="row-fluid image-block image-block-category cf">
+                        <div class="span8">
+                            <h4><a href='<?php the_permalink(); ?>'><?php echo $post->post_title; ?></a></h4>
+                        </div>
+                        <div class="span4">
+                        	<a href='<?php the_permalink(); ?>'>
+                            	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' ); ?>
+                                <img src="<?php echo $image[0]; ?>" />
+                        	</a>
+                        </div>
+                    </div><!--/row-fluid-->
+                    <?php endforeach; ?>
+                </div><!--/span6-->
 
-			<?php if ( category_description() ) : // Show an optional category description ?>
-				<div class="archive-meta"><?php echo category_description(); ?></div>
-			<?php endif; ?>
-			</header><!-- .archive-header -->
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/* Include the post format-specific template for the content. If you want to
-				 * this in a child theme then include a file called called content-___.php
-				 * (where ___ is the post format) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
-
-			endwhile;
-
-			twentytwelve_content_nav( 'nav-below' );
-			?>
-
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
-		
-
-    
-    
-    
-        
 <?php get_footer(); ?>

@@ -1,59 +1,48 @@
 <!doctype html>
-<!--[if IEMobile 7 ]> <html <?php language_attributes(); ?>class="no-js iem7"> <![endif]-->
-<!--[if lt IE 7 ]> <html <?php language_attributes(); ?> class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html <?php language_attributes(); ?> class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html <?php language_attributes(); ?> class="no-js ie8"> <![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
-<html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
-  <head>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+<html <?php language_attributes(); ?>>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="<?php bloginfo('description'); ?>" />
+        <title>
+          <?php if ( !is_front_page() ) { echo wp_title( ' ', true, 'left' ); echo ' | '; }
+          echo bloginfo( 'name' ); echo ' - '; bloginfo( 'description', 'display' );  ?> 
+        </title>
+        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+        <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+        <link rel='stylesheet' id='bootstrap-css'  href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='bootstrap-css'  href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.5/bootstrap-lightbox.min.css' type='text/css' media='all' />
+        <!-- wordpress head functions -->
+        <?php wp_head(); ?>
+        <!-- end of wordpress head -->
+    </head>
     
-    <link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
-    
-    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>
-      <?php if ( !is_front_page() ) { echo wp_title( ' ', true, 'left' ); echo ' | '; }
-      echo bloginfo( 'name' ); echo ' - '; bloginfo( 'description', 'display' );  ?> 
-    </title>
-        
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- icons & favicons -->
-    <!-- For iPhone 4 -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/h/apple-touch-icon.png">
-    <!-- For iPad 1-->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/m/apple-touch-icon.png">
-    <!-- For iPhone 3G, iPod Touch and Android -->
-    <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/l/apple-touch-icon-precomposed.png">
-    <!-- For Nokia -->
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/l/apple-touch-icon.png">
-    <!-- For everything else -->
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-        
-    <!-- media-queries.js (fallback) -->
-    <!--[if lt IE 9]>
-      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>      
-    <![endif]-->
-
-    <!-- html5.js -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-    <!-- Le styles -->
-    <!-- wordpress head functions -->
-    <?php wp_head(); ?>
-    <!-- end of wordpress head -->
-    
-  </head>
-  
-  <body>
-  
-    <div class="container-fluid">
+    <body>
+        <div class="container-fluid">
+            <div class="row-fluid main-block">
+                <header class="span5">
+                    <div class="row-fluid">
+                        <div class="span12 title-block">
+                          <h1><a href="/"><?php bloginfo('title'); ?></a></h1>
+                        </div>
+                    </div>
+                    
+                    <div class="row-fluid subtitle-block">
+                        <div class="span12">
+                          <h2><?php bloginfo('description'); ?></h2>
+                        </div>
+                    </div>
+                    
+                    <div class="row-fluid link-block">
+                        <div class="span12">
+                            <ul>
+                                <li><a href="http://matthewbull.etsy.com">tumblr</a></li>
+                                <li><a href="http://matthewbull.etsy.com">facebook</a></li>
+                                <li><a href="http://matthewbull.etsy.com">etsy</a></li>
+                                <li class="last"><a href="http://matthewbull.net">blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     
+                </header><!--/span6-->

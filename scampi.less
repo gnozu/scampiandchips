@@ -1,0 +1,452 @@
+/*
+Theme Name: scampiandchips
+Template: scampiandchips
+Theme URI: https://github.com/gnozu/scampiandchips.git
+Description: a simple theme using bootstrap
+Version: 0.1
+Author: matthew bull
+Author URI: http://matthewbull.net
+Tags: black, white, flexible-width, responsive, bootstrap
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/* micro clearfix: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/***********************************************************/
+
+/*
+* Custom CSS for matthewbullphoto.com
+* Copyright 2012 Matthew Bull
+*
+* Designed and built by @gnozu
+*/
+
+/******** Custom Styles ********/
+
+@highlight-color: #443731;
+@secondary-highlight-color: #cd351d;
+@secondary-color: #b6aa95;
+@background-color: #fff;
+
+body {
+     -webkit-font-smoothing: antialiased;
+     background-color: @background-color;
+     color: @secondary-color;
+}
+
+header {
+    margin: 0px 0px 30px 0px;
+}
+
+footer {
+    margin: 60px 0px 0px 0px;
+}
+
+.container-fluid {
+    padding: 80px 100px 50px 100px;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.row, .row-fluid {
+    margin: 0px 0px 0px 0px;
+}
+
+h1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    color: @highlight-color;
+    margin-top: 0px;
+}
+
+h1 a:link {color: @highlight-color;text-decoration: none;}       /* unvisited link */
+h1 a:visited {color: @highlight-color;text-decoration: none;}  /* visited link */
+h1 a:hover {color: @secondary-color; text-decoration: none;}  /* mouse over link */
+h1 a:active {color: @highlight-color;text-decoration: none;}  /* selected link */
+
+h2 {
+    font-size: 2em;
+    color: @secondary-highlight-color;
+}
+
+h1, h2 {
+    margin-bottom:10px;
+}
+
+h3, h4 {
+    color: @highlight-color;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    margin-top:0;
+}
+
+p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:14px;
+    line-height:21px;
+    margin-bottom: 1.625em;
+}
+
+a:link {color: @highlight-color;text-decoration: none;}       /* unvisited link */
+a:visited {color: @highlight-color;text-decoration: none;}  /* visited link */
+a:hover {color: @secondary-color;text-decoration: none;}  /* mouse over link */
+a:active {color: @highlight-color;text-decoration: none;}  /* selected link */
+
+.main-block {
+    padding-bottom: 30px;
+}
+
+.title-block {
+    padding: 0px 0px 0px 0px;
+}
+
+.subtitle-block {
+    padding: 40px 0px 0px 0px;
+}
+
+.highlighted {
+    color: @secondary-highlight-color;
+}
+
+.link-block {
+    padding: 0px 0px 0px 0px;
+}
+
+.link-block ul {
+    margin: 0;
+}
+
+.image-block {
+    margin: 0px 0px 80px 0px;
+}
+
+.image-block-category {
+    margin: 40px 0px 60px 0px;
+}
+
+.attribution {
+    font-size: 1em;
+}
+
+.title-single {
+    padding: 50px 0 0 0;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul li:after {
+    content: " . ";
+    color: @secondary-highlight-color;
+}
+  
+ul li.last:after {
+    content: "";
+}
+
+.category-block p, .category-block h3 {
+    padding: 0;
+    margin: 0;
+}
+
+/******** image block hover effects ********/
+
+.view {
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    margin-bottom: 100px;
+}
+
+.view img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+
+.view .mask {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding:0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.view:hover img {
+    opacity: 0.5;
+}
+
+.view:hover .mask {
+    opacity: 0.8;
+}
+
+.mask-image-1 {
+    background-image: url('images/camber.jpg');
+}
+.mask-image-2 {
+    background-image: url('images/img.jpg');
+}
+.mask-image-3 {
+    background-image: url('images/hand.jpg');
+}
+.mask-image-4 {
+    background-image: url('images/img.jpg');
+}
+
+
+/******** Responsive Styles ********/
+
+
+/* Large desktop */
+@media (min-width: 1200px) {}
+
+/* Desktop to large desktop */
+@media (min-width: 979px) and (max-width: 1200px) {}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {}
+
+/**** Landscape phone to portrait tablet ****/
+@media (max-width: 767px) {
+    
+    h1, h2, h3, h4 {
+       margin: 0;
+    }
+    
+    .index-list {
+       padding: 0px 0 0 0;
+    }
+    
+    header {
+       margin: 0px 0px 0px 0px;
+    }
+    
+    footer {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .view .mask {
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .view img {
+       opacity: 0;
+    }
+    
+    .view:hover img {
+       opacity: 0;
+    }
+    .view:hover .mask {
+       opacity: 1;
+    }
+    
+    .main-block {
+       margin-top:0px;
+    }
+
+    .container-fluid {
+       padding: 20px 50px 50px 50px;
+    }
+    
+    .link-block {
+       padding: 10px 0px 0px 0px;
+    }
+    
+    .image-block {
+       margin: 0 0 20px 0;
+    }
+    
+    .image-block-category {
+       margin: 20px 0 40px 0;
+       width: 100%;
+    }
+    
+    .view {
+       margin-top: 30px;
+    }
+    
+    .title-block {
+       padding: 0px 0px 0px 0px;
+    }
+    
+    .subtitle-block {
+       padding: 0px 0px 0px 0px;
+    }
+    
+    .index-list {
+       padding: 0px 0 0 0;
+    }
+    
+    .title-single {
+       padding: 20px 0 0 0;
+    }
+    
+    .title-single p {
+       padding: 5px 0;
+       margin: 0;
+    }
+    
+    .subtitle-block {
+        padding: 0px 0px 0px 0px;
+        display: none;
+    }
+    
+    .category-block p {
+       padding: 0;
+       margin: 0;
+    }
+}
+
+
+/**** Landscape phones and down ****/
+@media (max-width: 480px) {
+    
+    h1, h2, h3, h4 {
+       margin: 0;
+    }
+    
+    .index-list {
+       padding: 0px 0 0 0;
+    }
+    
+    header {
+       margin: 0px 0px 0px 0px;
+    }
+    
+    footer {
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .view .mask {
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .view img {
+       opacity: 0;
+    }
+    
+    .view:hover img {
+       opacity: 0;
+    }
+    .view:hover .mask {
+       opacity: 1;
+    }
+    
+    .main-block {
+       margin-top:0px;
+    }
+
+    .container-fluid {
+       padding: 20px 50px 20px 50px;
+    }
+    
+    .link-block {
+       padding: 10px 0px 0px 0px;
+    }
+    
+    .image-block {
+       margin: 0 0 20px 0;
+    }
+    
+    .image-block-category {
+       margin: 20px 0 40px 0;
+       width: 100%;
+    }
+    
+    .image-block-category img {
+       width: 100%;
+    }
+    
+    .view {
+       margin-top: 30px;
+    }
+    
+    .attribution {
+       float: left;
+    }
+    
+    .title-block {
+       padding: 0px 0px 0px 0px;
+    }
+    
+    .title-single {
+       padding: 20px 0 0 0;
+    }
+    
+    .title-single p {
+       padding: 5px 0;
+       margin: 0;
+    }
+    
+    .subtitle-block {
+        padding: 0px 0px 0px 0px;
+        display: none;
+    }
+    
+    .category-block p {
+       padding: 0;
+       margin: 0;
+    }
+    
+}
+
+
+
+
+
+

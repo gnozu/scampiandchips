@@ -1,41 +1,12 @@
-			<footer role="contentinfo">
-			
-				<div id="inner-footer" class="clearfix">
-          
-          <div id="widget-footer" class="clearfix row-fluid">
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
-            <?php endif; ?>
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
-            <?php endif; ?>
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
-            <?php endif; ?>
-          </div>
-					
-					<nav class="clearfix">
-						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
-					</nav>
-					
-					<p class="attribution pull-right"><a href="http://matthewbull.net" title="matthew bull">design by matthew bull</a></p>
-			
-					<p class="attribution pull-left">&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
-				
-				</div> <!-- end #inner-footer -->
-				
-			</footer> <!-- end footer -->
-		
-		</div><!--/.container-fluid-->
-				
-		<!--[if lt IE 7 ]>
-  			<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-  			<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-		<![endif]-->
-		
-		<!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-		<?php wp_footer(); // js scripts are inserted using this function ?>
-		
-    
-
-  </body>
+            </div><!--/main-block-->
+        	<footer role="contentinfo" class="cf">
+        			<p class="attribution pull-right"><a href="http://matthewbull.net" title="matthew bull">design <span class="highlighted">.</span> matthew bull</a></p>
+        			<p class="attribution pull-left"><span class="highlighted">&copy;</span> <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
+        	</footer> <!-- end footer -->
+        </div><!--/.container-fluid-->
+        
+        <?php wp_footer(); // js scripts are inserted using this function ?>
+        <script type='text/javascript' src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js'></script>
+        <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.5/bootstrap-lightbox.min.js'></script>
+    </body>
 </html>
