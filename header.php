@@ -21,28 +21,28 @@
     <body>
         <div class="container-fluid">
             <div class="row-fluid main-block">
-                <header class="span5">
-                    <div class="row-fluid">
-                        <div class="span12 title-block">
-                          <h1><a href="/"><?php bloginfo('title'); ?></a></h1>
-                        </div>
-                    </div>
-                    
-                    <div class="row-fluid subtitle-block">
-                        <div class="span12">
-                          <h2><?php bloginfo('description'); ?></h2>
-                        </div>
-                    </div>
-                    
-                    <div class="row-fluid link-block">
-                        <div class="span12">
-                            <ul>
-                                <li><a href="http://matthewbull.etsy.com">tumblr</a></li>
-                                <li><a href="http://matthewbull.etsy.com">facebook</a></li>
-                                <li><a href="http://matthewbull.etsy.com">etsy</a></li>
-                                <li class="last"><a href="http://matthewbull.net">blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                     
-                </header><!--/span6-->
+                <div class="span5">
+                    <header>
+                        <div class="row-fluid">
+                            <div class="span12 title-block">
+                              <h1><a href="/"><?php bloginfo('title'); ?></a></h1>
+                            </div>
+                        </div><!--/.row-fluid-->
+                        
+                        <div class="row-fluid subtitle-block">
+                            <div class="span12">
+                              <h2><?php bloginfo('description'); ?></h2>
+                            </div>
+                        </div><!--/.row-fluid-->
+                        
+                        <div class="row-fluid link-block">
+                            <div class="span12">
+                                <ul>
+                                    <li><a href="http://matthewbull.etsy.com">tumblr</a></li>
+                                    <li><a href="http://matthewbull.etsy.com">facebook</a></li>
+                                    <li><a href="http://matthewbull.etsy.com">etsy</a></li>
+                                    <li class="last"><a href="http://matthewbull.net">blog</a></li>
+                                </ul>
+                            </div>
+                        </div><!--/.row-fluid-->
+                    </header>

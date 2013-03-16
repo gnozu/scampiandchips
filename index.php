@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-
+                </div><!--/.span5-->
+                
                 <div class="span6 offset1 index-list">   
                     <div class="row-fluid cf">
                         <div class="span4 view image-block">
@@ -14,7 +15,7 @@
                                 <div class="mask mask-image-1"></div>
                         	</a>
                         </div>
-                    </div><!--/row-fluid-->
+                    </div><!--/.row-fluid-->
                     
                     <div class="row-fluid">
                         <div class="span4 view image-block">
@@ -29,7 +30,7 @@
                                 <div class="mask mask-image-1"></div>
                         	</a>
                         </div>
-                    </div><!--/row-fluid-->
-                </div><!--/span6-->
-
+                    </div><!--/.row-fluid-->
+                </div><!--/.span6-->
+            </div><!--/.main-block-->
 <?php get_footer(); ?>

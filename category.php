@@ -1,14 +1,13 @@
 <?php get_header(); ?>
-
-                <div class="span6 offset1">
                     <div class="row-fluid category-block">
-                        <div class="span10">
+                        <div class="span12">
                         <?php $cat_id = get_query_var('cat'); ?>
                             <h3><a href='<?php echo get_category_link($cat_id); ?>'><?php single_cat_title(); ?></a></h3>
                             <?php echo category_description(); ?>
                         </div>
-                    </div>
-                    
+                    </div><!--/.row-fluid-->
+                </div><!--./span5-->
+                <div class="span6 offset1">
                     <?php foreach ( get_posts( array( 'category' => 'black-and-white' ) ) as $post ): ?>        
                     <div class="row-fluid image-block image-block-category cf">
                         <div class="span8">
@@ -20,10 +19,10 @@
                                 <img src="<?php echo $image[0]; ?>" />
                         	</a>
                         </div>
-                    </div><!--/row-fluid-->
+                    </div><!--/.row-fluid-->
                     <?php endforeach; ?>
-                </div><!--/span6-->
+                </div><!--/.span6-->
                 
-            </div><!--/main-block-->
+            </div><!--/.main-block-->
             
 <?php get_footer(); ?>

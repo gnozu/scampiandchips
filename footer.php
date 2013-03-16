@@ -2,7 +2,7 @@
         	<footer role="contentinfo" class="cf">
         			<p class="attribution pull-right"><a href="http://matthewbull.net" title="matthew bull">design <span class="highlighted">.</span> matthew bull</a></p>
         			<p class="attribution pull-left"><span class="highlighted">&copy;</span> <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
-        	</footer> <!-- end footer -->
+        	</footer> <!--/footer -->
         </div><!--/.container-fluid-->
         
         <?php wp_footer(); // js scripts are inserted using this function ?>
