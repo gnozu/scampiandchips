@@ -283,10 +283,19 @@ ul li.last:after {
 @media (min-width: 979px) and (max-width: 1200) {}
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {}
+@media (min-width: 768px) and (max-width: 979px) {
+    
+    h1 {
+     font-size: 2.4em;   
+    }
+}
 
 /**** Landscape phone to portrait tablet ****/
 @media (max-width: 767px) {
+    
+    h1 {
+     font-size: 1.7em;
+    }
     
     h1, h2, h3, h4 {
        margin: 0;
@@ -387,37 +396,8 @@ ul li.last:after {
 /**** Landscape phones and down ****/
 @media (max-width: 480) {
     
-    h1, h2, h3, h4 {
-       margin: 0;
-    }
-    
-    .index-list {
-       padding: 0 0 0 0;
-    }
-    
-    header {
-       margin: 0 0 0 0;
-    }
-    
     footer {
         margin: 20px 0 0 0;
-    }
-    
-    footer .pull-right {
-        clear: both;
-        float: left;
-    }
-    
-    .view .mask {
-        filter:alpha(opacity=80);
-        opacity: 0.8;
-        height: 100%;
-        width: 100%;
-    }
-    
-    .view img {
-        filter:alpha(opacity=50);
-        opacity: 0.5;
     }
     
     .view:hover img {   
@@ -429,10 +409,6 @@ ul li.last:after {
        opacity: 1;
     }
     
-    .main-block {
-       margin-top:0;
-    }
-
     .container-fluid {
        padding: 20px 50px 20px 50px;
     }
@@ -455,45 +431,15 @@ ul li.last:after {
        width: 100%;
     }
     
-    .view {
-       margin-top: 30px;
-    }
     
     .attribution {
        float: left;
-    }
-    
-    .title-block {
-       padding: 0 0 0 0;
-    }
-    
-    .title-single {
-       padding: 20px 0 0 0;
-    }
-    
-    .title-single p {
-       padding: 5px 0;
-       margin: 0;
     }
     
     .view-single {
         margin: 0;
     }
     
-    .subtitle-block {
-        padding: 0 0 0 0;
-        display: none;
-    }
-    
-    .category-block {
-        padding: 0;
-        margin: 20px 0;
-    }
-
-    .category-block p {
-       padding: 0;
-       margin: 0;
-    }
     
 }
 
